@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #4300FF, #0065F8, #00CAFF);
+    color: #E5E7EB;
+}
+
+/* NAVBAR */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* underline */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00FFDE;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.hero img {
+    width: 300px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #00FFDE;
+    border: none;
+    cursor: pointer;
+}
+
+/* CARD */
+.card {
+    margin: 100px auto;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #00CAFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESULT */
+.result img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 50px;
+}
